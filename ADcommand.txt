@@ -1,0 +1,10 @@
+﻿New-ADUser -Name "Marwan" -AccountPassword (ConvertTo-SecureString "Mar425468!!" -AsPlainText -Force) -Enabled $true
+Remove-ADUser -Identity "Namn"
+Get-ADUser "Namn"
+New-ADGroup -Name "namn" -Description "marwan.com" 
+Remove-ADGroup -Identity "namn"
+Get-ADGroupMember -Identity "administrators" | Select name, objectClass
+Add-ADGroupMember -Identity "grupp namn" -Members "användare Namn"
+Remove-ADGroupMember -Identity "group namn" -Members "användare Namn"
+New-ADOrganizationalUnit -Name "Marwan2.com"
+Remove-ADOrganizationalUnit -Name "Marwan2.com"
